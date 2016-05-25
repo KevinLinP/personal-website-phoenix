@@ -25,7 +25,7 @@ exports.config = {
     },
     templates: {
       joinTo: {
-        'js/app.js': /.+\.jade$/
+        'js/templates.js': /.+\.jade$/
       }
     }
   },
