@@ -1,0 +1,45 @@
+extends ./_layout.jade
+
+block body
+  .resume
+    .container
+      header.text-xs-center
+        h1 Kevin Lin
+        a(href='mailto:kevin.lin.p@gmail.com') kevin.lin.p@gmail.com
+        if show_phone_number
+          br
+          | Mobile:
+          a(href="tel:#{phone_number}")= phone_number
+          br
+          | FaceTime: 
+          a(href="facetime:#{phone_number}")= phone_number
+          br
+          | Skype: 
+          a(href="skype:kevin.lin.p") kevin.lin.p
+          br
+          | Google Hangouts: 
+          a(href="https://plus.google.com/+KevinLinP" target="_blank") plus.google.com/+KevinLinP
+
+      section
+        h2 Summary 
+        p A 3½-year Ruby on Rails full-stack software developer is seeking part-time contract opportunities.
+
+      section
+        include ./resume/_skills.jade
+
+      section
+        include ./resume/_experience.jade
+
+      section
+        include ./resume/_education.jade
+
+      .visible-print-block
+        footer
+          .row
+            .col-md-6.text-muted Printed from kevinlinp.org/resume
+            //- .col-md-6.text-xs-right.text-muted= RESUME_LAST_UPDATED.strftime('%B %e, %Y')
+
+      .hidden-print
+        .github-fork-ribbon-wrapper.right-bottom
+          .github-fork-ribbon
+            a(href="https://github.com/kevinlinp/resume-app") Fork me on GitHub!
