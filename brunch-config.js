@@ -24,9 +24,7 @@ exports.config = {
       joinTo: "css/app.css"
     },
     templates: {
-      joinTo: {
-        'js/templates.js': /.+\.jade$/
-      }
+      joinTo: "js/app.js"
     }
   },
 
@@ -55,8 +53,10 @@ exports.config = {
       // Do not use ES6 compiler in vendor code
       ignore: [/web\/static\/vendor/]
     },
-    static_jade: {
-      asset: "priv/"
+    sass: {
+      mode: "native",
+      debug: "comments",
+      sourceMapEmbed: true
     }
   },
 
