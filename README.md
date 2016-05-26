@@ -1,3 +1,3 @@
 ### My Website
 
-Accessible via http://www.kevinlinp.org.
+Currently accessible via http://www.kevinlinp.org.
